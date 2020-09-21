@@ -5,7 +5,6 @@
 //c. Method to display name and age of person
 //Create another class PersonDemo ( main class ) that demonstrates 
 //the functionalities of Person class by creating Person object and calling methods.
-import java.util.Scanner;
 
 public class Person {
     int age;
