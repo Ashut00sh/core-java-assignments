@@ -21,14 +21,8 @@ class array29 {
                 in++;
             }
         }
-
+        System.out.println("Total no of one D array =" + out);
+        System.out.println("no of element in one D array =" + in);
         for (int abc[] : arr) {
             for (int er : abc) {
                 System.out.print(er);
-            }
-            System.out.println("");
-        }
-        System.out.println("Total no of one D array =" + out);
-        System.out.println("Totle no of element in one D array =" + in);
-    }
-}
