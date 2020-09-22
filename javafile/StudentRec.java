@@ -18,11 +18,6 @@ public class StudentRec {
         this.score = score;
     }
 
-    void show() {
-        System.out.println(
-                "students records=" + "name=" + name + " rollno= " + rollno + "age= " + age + "score= " + score);
-    }
-
     static void GroupStu(StudentRec arr[]) {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i].score <= 50) {
@@ -40,14 +35,22 @@ public class StudentRec {
             }
         }
     }
+
+    void show() {
+        System.out.println(
+                "students records=" + "name=" + name + " rollno= " + rollno + "age= " + age + "score= " + score);
+    }
+
 }
 
 class StudentRecDemo {
     public static void main(String[] args) {
         Scanner k = new Scanner(System.in);
-        StudentRec arr[] = new StudentRec[4];
+        StudentRec arr[] = new StudentRec[2];
+
         for (int i = 0; i < arr.length; i++) {
             System.out.println("Enter name");
+            k.next();// clear buffer;
             String name = k.nextLine();
             System.out.println("Enter rollno");
             int rollno = k.nextInt();
