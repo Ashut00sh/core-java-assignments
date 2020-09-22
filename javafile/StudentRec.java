@@ -36,22 +36,17 @@ public class StudentRec {
         }
     }
 
-    void show() {
-        System.out.println(
-                "students records=" + "name=" + name + " rollno= " + rollno + "age= " + age + "score= " + score);
-    }
-
 }
 
 class StudentRecDemo {
     public static void main(String[] args) {
         Scanner k = new Scanner(System.in);
         StudentRec arr[] = new StudentRec[2];
-        k.next();// clear buffer;
+
         for (int i = 0; i < arr.length; i++) {
             System.out.println("Enter name");
-
-            String name = k.nextLine();
+            // k.next();// clear buffer;
+            String name = k.next();
             System.out.println("Enter rollno");
             int rollno = k.nextInt();
             System.out.println("Enter age");
