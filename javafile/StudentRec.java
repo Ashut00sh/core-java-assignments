@@ -47,10 +47,10 @@ class StudentRecDemo {
     public static void main(String[] args) {
         Scanner k = new Scanner(System.in);
         StudentRec arr[] = new StudentRec[2];
-
+        k.next();// clear buffer;
         for (int i = 0; i < arr.length; i++) {
             System.out.println("Enter name");
-            k.next();// clear buffer;
+
             String name = k.nextLine();
             System.out.println("Enter rollno");
             int rollno = k.nextInt();
@@ -61,6 +61,7 @@ class StudentRecDemo {
             StudentRec sr = new StudentRec(name, rollno, age, score);
             arr[i] = sr;
         }
+        k.close();
         StudentRec.GroupStu(arr);
 
         for (StudentRec abc : arr) {
