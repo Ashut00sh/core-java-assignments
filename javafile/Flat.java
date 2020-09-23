@@ -1,9 +1,9 @@
 import java.util.*;
 
 class OneBHK {
-    double roomarea;
-    double hallarea;
-    double price;
+    private double roomarea;
+    private double hallarea;
+    protected double price;
 
     OneBHK() {
         roomarea = 700;
@@ -23,7 +23,7 @@ class OneBHK {
 }
 
 class TwoBHK extends OneBHK {
-    double room2Area;
+    private double room2Area;
 
     TwoBHK() {
 
@@ -37,8 +37,8 @@ class TwoBHK extends OneBHK {
     }
 
     void show() {
-        System.out.println(
-                "roomarea=" + roomarea + "hallarea= " + hallarea + "price=" + price + "room2Area=" + room2Area);
+        super.show();
+        System.out.println("room2Area=" + room2Area);
     }
 
 }
@@ -46,8 +46,9 @@ class TwoBHK extends OneBHK {
 class FlatDemo {
     public static void main(String[] args) {
         Scanner e = new Scanner(System.in);
-
-        TwoBHK arr[] = new TwoBHK[2];
+        System.out.println("how many records you want to store");
+        int l = e.nextInt();
+        TwoBHK arr[] = new TwoBHK[l];
         for (int i = 0; i < arr.length; i++) {
             System.out.println("Enter roomarea");
             double roomarea = e.nextDouble();
@@ -71,6 +72,6 @@ class FlatDemo {
             abc.show();
 
         }
-        System.out.println("Total of all flats=" + sum);
+        System.out.println("Total price of all" + l + " flats=" + sum);
     }
 }
