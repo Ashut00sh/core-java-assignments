@@ -1,9 +1,4 @@
-//61.	Create a Thread class to print following star (*) pattern on screen with delay of 1 second between each * print.
-//Number of lines in the pattern should be passed to the constructor of Thread class. 
-//*  * * * *  * * * * * * * * * * 
-//Use this class in main method and ask user to enter number of lines to print.
-
-package Q61;
+package samplequestions;
 
 import java.util.Scanner;
 
